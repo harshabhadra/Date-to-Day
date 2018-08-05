@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7986CB"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/enterDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="55dp"
+            android:fontFamily="serif"
+            android:layout_gravity="center"
+            android:maxLines="1"
+            android:text="Enter Date"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:paddingBottom="8dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#FFFFFF"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:hint="dd"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:gravity="center"
+                android:id="@+id/month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="#FFFFFF"
+                android:ellipsize="end"
+                android:hint="mm"
+                android:maxLength="2"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+            <EditText
+                android:gravity="right"
+                android:id="@+id/year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:background="#FFFFFF"
+                android:hint="yyyy"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:padding="10dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/printDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#FFFFFF"
+            android:fontFamily="@font/aclonica"
+            android:gravity="center"
+            android:hint="Day"
+            android:paddingLeft="35dp"
+            android:paddingBottom="8dp"
+            android:paddingRight="35dp"
+            android:paddingTop="8dp"
+            android:textColor="#283593"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="#9FA8DA"
+            android:padding="16dp"
+            android:onClick="submit"
+            android:text="convert date"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+</ScrollView>
