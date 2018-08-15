@@ -4,7 +4,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/calender"
+        android:icon="@drawable/day_to_day"
         android:supportsRtl="true"
         android:label="Date To Day"
         android:theme="@style/AppTheme">

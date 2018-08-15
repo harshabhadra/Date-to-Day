@@ -51,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private void printDate (String s){
         TextView textView = (TextView) findViewById(R.id.printDate);
         textView.setText(s);
+        textView.animate().rotationX(360).setDuration(1000);
     }
 
 

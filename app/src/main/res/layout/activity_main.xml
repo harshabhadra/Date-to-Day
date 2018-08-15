@@ -1,114 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7986CB"
+    android:background="#C5CAE9"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content" >
 
 
         <TextView
             android:id="@+id/enterDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="25dp"
-            android:paddingRight="25dp"
-            android:paddingBottom="16dp"
-            android:layout_marginBottom="10dp"
-            android:layout_marginTop="55dp"
-            android:fontFamily="serif"
             android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="casual"
+            android:gravity="center"
             android:maxLines="1"
             android:text="Enter Date"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
+            android:textSize="26sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:paddingBottom="8dp"
+            android:id="@+id/linearLayout"
+            android:layout_width="354dp"
+            android:layout_height="84dp"
             android:layout_gravity="center"
-            android:orientation="horizontal">
+            android:layout_marginTop="16dp"
+            android:background="@drawable/shape_2"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enterDate">
 
             <EditText
                 android:id="@+id/date"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:background="#FFFFFF"
-                android:ellipsize="end"
-                android:gravity="left"
+                android:background="@drawable/shape_3"
                 android:hint="dd"
                 android:maxLength="2"
                 android:maxLines="1"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textSize="26sp" />
 
 
             <EditText
-                android:gravity="center"
                 android:id="@+id/month"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/shape_3"
                 android:ellipsize="end"
+                android:gravity="center"
                 android:hint="mm"
                 android:maxLength="2"
                 android:maxLines="1"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textSize="26sp" />
 
             <EditText
-                android:gravity="right"
                 android:id="@+id/year"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:layout_marginRight="20dp"
-                android:background="#FFFFFF"
+                android:background="@drawable/shape_3"
+                android:ellipsize="end"
+                android:gravity="center"
                 android:hint="yyyy"
                 android:maxLength="4"
                 android:maxLines="1"
-                android:padding="10dp" />
+                android:padding="10dp"
+                android:textSize="26sp" />
         </LinearLayout>
 
 
         <TextView
             android:id="@+id/printDate"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="378dp"
+            android:layout_height="79dp"
             android:layout_gravity="center"
-            android:background="#FFFFFF"
-            android:fontFamily="@font/aclonica"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape"
+            android:fontFamily="casual"
             android:gravity="center"
             android:hint="Day"
+            android:textColorHint="#FFFFFF"
+            android:textColor="#FFFFFF"
             android:paddingLeft="35dp"
-            android:paddingBottom="8dp"
-            android:paddingRight="35dp"
             android:paddingTop="8dp"
-            android:textColor="#283593"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:paddingRight="35dp"
+            android:paddingBottom="8dp"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
         <Button
             android:id="@+id/submit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="16dp"
-            android:background="#9FA8DA"
-            android:padding="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@drawable/shape_3"
             android:onClick="submit"
+            android:padding="16dp"
             android:text="convert date"
             android:textAllCaps="true"
-            android:textColor="#FFFFFF" />
-
-    </LinearLayout>
+            android:textColor="#000000"
+            android:fontFamily="sans-serif"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/printDate" />
+    </android.support.constraint.ConstraintLayout>
 </ScrollView>
